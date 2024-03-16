@@ -5,6 +5,7 @@ author: "Yani Bellini Saibene"
 format: 
   revealjs:
     theme: [default, stilos.scss]
+    footer: repo de esta charla <https://github.com/yabellini/quarto-slides>
 ---
 
 ## Hola, les doy la bienvenida
@@ -16,8 +17,7 @@ Hoy vamos a:
 - separacion en columnas de contenido
 - presentacion incremental de texto y codigo
 - resaltar contenido.
-- esconder slides.
-- publicarla en la web con netlify (si hacemos tiempo).
+- personalizar el pie de la slide
 
 
 ## Me cuentan {.winter}
@@ -43,9 +43,7 @@ Hoy vamos a:
 Para agregar una slide nueva podemos usar:
 
 - el encabezado de segundo nivel.
-- tres guiones del medio para generar una nueva slide sin titulo.
-
-El encabezado de primer nivel genera una seccion nueva.
+- el encabezado de primer nivel genera una seccion nueva.
 
 :::
 
@@ -62,13 +60,34 @@ El codigo seria asi:
 
 ## Esta es una tercera slide
 
----
 
 ````
 :::
 
 ::::
 
+## Mostrar elementos de forma incremental
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Para mostar los elementos de una lista de forma incremental (como la slide de las preguntas)
+:::
+
+::: {.column width="60%"}
+
+```` markdown
+
+::: incremental
+-   Primer item de la lista
+-   Segundo 
+-   y tercero 
+:::
+````
+
+:::
+
+::::
 
 ## Agregando imagenes
 
@@ -98,6 +117,42 @@ El codigo:
 :::
 
 ::::
+
+
+## Agregando columnas
+
+Esta slide esta dividida en dos columnas. 
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Se puede dividir al slides en muchas columnas mas.
+
+Se puede indicar que porcion de las slides ocupa cada columna.
+:::
+
+::: {.column width="60%"}
+
+```` markdown
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Columna izquierda
+:::
+
+::: {.column width="60%"}
+Columna derecha
+:::
+
+::::
+
+````
+
+:::
+
+::::
+
 
 
 # Ahora juguemos con codigo en nuestras slides
@@ -148,6 +203,8 @@ Para aprender mas: [Syntax Highlighting](https://quarto.org/docs/output-formats/
 
 ## Resaltar lineas de codigo
 
+Son utiles para explicar codigo o enfocar la atencion en una parte del codigo.
+
 ```{.r code-line-numbers="|1,2|3,4,5,6,7|8|9,10,11,12,13|"}
 pinguinos %>% 
   filter(especie == "Papúa") %>% 
@@ -166,6 +223,8 @@ pinguinos %>%
 ```
 
 ## Codigo ejecutable
+
+Podemos ejecutar codigo y mostrar su resultado.  Este es el grafico que genera el codigo que vimos antes. 
 
 ```{r}
 #| echo: false
@@ -190,11 +249,15 @@ pinguinos %>%
 ```
 
 ::: footer
-Learn more: [Executable Code](https://quarto.org/docs/presentations/revealjs/#executable-code)
+Para aprender mas: [Executable Code](https://quarto.org/docs/presentations/revealjs/#executable-code)
 :::
+
+# Vamos a personalizar nuestra presentacion: el YAML!
+y otras cositas.
 
 ## Fuentes para consultar
 
 - [Instalando Quarto](https://quarto.org)
 - [Documentacion oficial sobre presentaciones de Quarto](https://quarto.org/docs/presentations/)
-- [Emil Hvitfeldt's Series Slidecraft 101](https://emilhvitfeldt.com/blog.html#category=slidecraft%20101) 
+- [Emil Hvitfeldt's Series Slidecraft 101](https://emilhvitfeldt.com/blog.html#category=slidecraft%20101)
+- [Presentacion para CSV,Conf](https://github.com/yabellini/CSVConfv7/blob/main/index.qmd)

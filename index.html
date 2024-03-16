@@ -412,8 +412,7 @@ Yani Bellini Saibene
 <li>separacion en columnas de contenido</li>
 <li>presentacion incremental de texto y codigo</li>
 <li>resaltar contenido.</li>
-<li>esconder slides.</li>
-<li>publicarla en la web con netlify (si hacemos tiempo).</li>
+<li>personalizar el pie de la slide</li>
 </ul>
 </section>
 <section id="me-cuentan" class="slide level2 winter">
@@ -438,9 +437,8 @@ Yani Bellini Saibene
 <p>Para agregar una slide nueva podemos usar:</p>
 <ul>
 <li>el encabezado de segundo nivel.</li>
-<li>tres guiones del medio para generar una nueva slide sin titulo.</li>
+<li>el encabezado de primer nivel genera una seccion nueva.</li>
 </ul>
-<p>El encabezado de primer nivel genera una seccion nueva.</p>
 </div><div class="column" style="width:50%;">
 <p>El codigo seria asi:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href=""></a><span class="fu">## Esta es la primera slide</span></span>
@@ -450,8 +448,22 @@ Yani Bellini Saibene
 <span id="cb1-5"><a href=""></a><span class="fu"># Esta es una seccion</span></span>
 <span id="cb1-6"><a href=""></a></span>
 <span id="cb1-7"><a href=""></a><span class="fu">## Esta es una tercera slide</span></span>
-<span id="cb1-8"><a href=""></a></span>
-<span id="cb1-9"><a href=""></a>---</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-8"><a href=""></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</div>
+</section>
+<section id="mostrar-elementos-de-forma-incremental" class="slide level2">
+<h2>Mostrar elementos de forma incremental</h2>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>Para mostar los elementos de una lista de forma incremental (como la slide de las preguntas)</p>
+</div><div class="column" style="width:60%;">
+<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href=""></a></span>
+<span id="cb2-2"><a href=""></a>::: incremental</span>
+<span id="cb2-3"><a href=""></a><span class="ss">-   </span>Primer item de la lista</span>
+<span id="cb2-4"><a href=""></a><span class="ss">-   </span>Segundo </span>
+<span id="cb2-5"><a href=""></a><span class="ss">-   </span>y tercero </span>
+<span id="cb2-6"><a href=""></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -463,11 +475,34 @@ Yani Bellini Saibene
 <p>Es muy importante para la accesibilidad de nuestras presentaciones.</p>
 </div><div class="column" style="width:65%;">
 <p>El codigo:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href=""></a></span>
-<span id="cb2-2"><a href=""></a><span class="al">![](nombre-imagen)</span>{fig-alt = "alt text"}</span>
-<span id="cb2-3"><a href=""></a></span>
-<span id="cb2-4"><a href=""></a><span class="al">![](r-ladies-logo.png)</span>{fig-alt = "R-Ladies logo que dice R-Ladies en Argentina con un mate color purpura del lado izquierdo"}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href=""></a></span>
+<span id="cb3-2"><a href=""></a><span class="al">![](nombre-imagen)</span>{fig-alt = "alt text"}</span>
+<span id="cb3-3"><a href=""></a></span>
+<span id="cb3-4"><a href=""></a><span class="al">![](r-ladies-logo.png)</span>{fig-alt = "R-Ladies logo que dice R-Ladies en Argentina con un mate color purpura del lado izquierdo"}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><a href="https://quarto.org"><img data-src="r-ladies-logo.png" alt="R-Ladies en Argentina con un mate color purpura"></a></p>
+</div>
+</div>
+</section>
+<section id="agregando-columnas" class="slide level2">
+<h2>Agregando columnas</h2>
+<p>Esta slide esta dividida en dos columnas.</p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p>Se puede dividir al slides en muchas columnas mas.</p>
+<p>Se puede indicar que porcion de las slides ocupa cada columna.</p>
+</div><div class="column" style="width:60%;">
+<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href=""></a></span>
+<span id="cb4-2"><a href=""></a>:::: {.columns}</span>
+<span id="cb4-3"><a href=""></a></span>
+<span id="cb4-4"><a href=""></a>::: {.column width="40%"}</span>
+<span id="cb4-5"><a href=""></a>Columna izquierda</span>
+<span id="cb4-6"><a href=""></a>:::</span>
+<span id="cb4-7"><a href=""></a></span>
+<span id="cb4-8"><a href=""></a>::: {.column width="60%"}</span>
+<span id="cb4-9"><a href=""></a>Columna derecha</span>
+<span id="cb4-10"><a href=""></a>:::</span>
+<span id="cb4-11"><a href=""></a></span>
+<span id="cb4-12"><a href=""></a>::::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section></section>
@@ -482,14 +517,14 @@ Yani Bellini Saibene
 <li>Se utilizan chunks de codigo.</li>
 <li>Tiene estilos muy bonitos para formatear el codigo</li>
 </ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb3-1" class="hljs-ln-code"><a href=""></a>pinguinos <span class="sc">%&gt;%</span> </span>
-<span id="cb3-2" class="hljs-ln-code"><a href=""></a>  <span class="fu">filter</span>(especie <span class="sc">==</span> <span class="st">"Papúa"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb3-3" class="hljs-ln-code"><a href=""></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> largo_pico_mm, <span class="at">y =</span> alto_pico_mm)) <span class="sc">+</span></span>
-<span id="cb3-4" class="hljs-ln-code"><a href=""></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"darkorange"</span>,</span>
-<span id="cb3-5" class="hljs-ln-code"><a href=""></a>             <span class="at">size =</span> <span class="dv">3</span>,</span>
-<span id="cb3-6" class="hljs-ln-code"><a href=""></a>             <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
-<span id="cb3-7" class="hljs-ln-code"><a href=""></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"darkorange"</span>) <span class="sc">+</span></span>
-<span id="cb3-8" class="hljs-ln-code"><a href=""></a>  <span class="fu">theme_minimal</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb5-1" class="hljs-ln-code"><a href=""></a>pinguinos <span class="sc">%&gt;%</span> </span>
+<span id="cb5-2" class="hljs-ln-code"><a href=""></a>  <span class="fu">filter</span>(especie <span class="sc">==</span> <span class="st">"Papúa"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-3" class="hljs-ln-code"><a href=""></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> largo_pico_mm, <span class="at">y =</span> alto_pico_mm)) <span class="sc">+</span></span>
+<span id="cb5-4" class="hljs-ln-code"><a href=""></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"darkorange"</span>,</span>
+<span id="cb5-5" class="hljs-ln-code"><a href=""></a>             <span class="at">size =</span> <span class="dv">3</span>,</span>
+<span id="cb5-6" class="hljs-ln-code"><a href=""></a>             <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb5-7" class="hljs-ln-code"><a href=""></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"darkorange"</span>) <span class="sc">+</span></span>
+<span id="cb5-8" class="hljs-ln-code"><a href=""></a>  <span class="fu">theme_minimal</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="footer">
 <p>Para aprender mas: <a href="https://quarto.org/docs/output-formats/html-code.html#highlighting">Syntax Highlighting</a></p>
 </div>
@@ -500,45 +535,52 @@ Yani Bellini Saibene
 <li>Se utilizan chunks de codigo.</li>
 <li>Tiene estilos muy bonitos para formatear el codigo</li>
 </ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb4-1" class="hljs-ln-code"><a href=""></a>pinguinos <span class="sc">%&gt;%</span> </span>
-<span id="cb4-2" class="hljs-ln-code"><a href=""></a>  <span class="fu">filter</span>(especie <span class="sc">==</span> <span class="st">"Papúa"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb4-3" class="hljs-ln-code"><a href=""></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> largo_pico_mm, <span class="at">y =</span> alto_pico_mm)) <span class="sc">+</span></span>
-<span id="cb4-4" class="hljs-ln-code"><a href=""></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"darkorange"</span>,</span>
-<span id="cb4-5" class="hljs-ln-code"><a href=""></a>             <span class="at">size =</span> <span class="dv">3</span>,</span>
-<span id="cb4-6" class="hljs-ln-code"><a href=""></a>             <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
-<span id="cb4-7" class="hljs-ln-code"><a href=""></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"darkorange"</span>) <span class="sc">+</span></span>
-<span id="cb4-8" class="hljs-ln-code"><a href=""></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb4-9" class="hljs-ln-code"><a href=""></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Dimensiones del pico de los pingüinos"</span>,</span>
-<span id="cb4-10" class="hljs-ln-code"><a href=""></a>       <span class="at">subtitle =</span> <span class="st">"Alto y largo del pico de pingüinos Papúa en la Estación Palmer LTER"</span>,</span>
-<span id="cb4-11" class="hljs-ln-code"><a href=""></a>       <span class="at">x =</span> <span class="st">"Largo del pico (mm)"</span>,</span>
-<span id="cb4-12" class="hljs-ln-code"><a href=""></a>       <span class="at">y =</span> <span class="st">"Alto del pico (mm)"</span>,</span>
-<span id="cb4-13" class="hljs-ln-code"><a href=""></a>       <span class="at">color =</span> <span class="st">"Especie"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a href=""></a>pinguinos <span class="sc">%&gt;%</span> </span>
+<span id="cb6-2" class="hljs-ln-code"><a href=""></a>  <span class="fu">filter</span>(especie <span class="sc">==</span> <span class="st">"Papúa"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb6-3" class="hljs-ln-code"><a href=""></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> largo_pico_mm, <span class="at">y =</span> alto_pico_mm)) <span class="sc">+</span></span>
+<span id="cb6-4" class="hljs-ln-code"><a href=""></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"darkorange"</span>,</span>
+<span id="cb6-5" class="hljs-ln-code"><a href=""></a>             <span class="at">size =</span> <span class="dv">3</span>,</span>
+<span id="cb6-6" class="hljs-ln-code"><a href=""></a>             <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb6-7" class="hljs-ln-code"><a href=""></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"darkorange"</span>) <span class="sc">+</span></span>
+<span id="cb6-8" class="hljs-ln-code"><a href=""></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb6-9" class="hljs-ln-code"><a href=""></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Dimensiones del pico de los pingüinos"</span>,</span>
+<span id="cb6-10" class="hljs-ln-code"><a href=""></a>       <span class="at">subtitle =</span> <span class="st">"Alto y largo del pico de pingüinos Papúa en la Estación Palmer LTER"</span>,</span>
+<span id="cb6-11" class="hljs-ln-code"><a href=""></a>       <span class="at">x =</span> <span class="st">"Largo del pico (mm)"</span>,</span>
+<span id="cb6-12" class="hljs-ln-code"><a href=""></a>       <span class="at">y =</span> <span class="st">"Alto del pico (mm)"</span>,</span>
+<span id="cb6-13" class="hljs-ln-code"><a href=""></a>       <span class="at">color =</span> <span class="st">"Especie"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="footer">
 <p>Para aprender mas: <a href="https://quarto.org/docs/output-formats/html-code.html#highlighting">Syntax Highlighting</a></p>
 </div>
 </section>
 <section id="resaltar-lineas-de-codigo" class="slide level2">
 <h2>Resaltar lineas de codigo</h2>
-<div class="sourceCode" id="cb5" data-code-line-numbers="|1,2|3,4,5,6,7|8|9,10,11,12,13|"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a>pinguinos <span class="sc">%&gt;%</span> </span>
-<span id="cb5-2"><a href=""></a>  <span class="fu">filter</span>(especie <span class="sc">==</span> <span class="st">"Papúa"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb5-3"><a href=""></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> largo_pico_mm, <span class="at">y =</span> alto_pico_mm)) <span class="sc">+</span></span>
-<span id="cb5-4"><a href=""></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"darkorange"</span>,</span>
-<span id="cb5-5"><a href=""></a>             <span class="at">size =</span> <span class="dv">3</span>,</span>
-<span id="cb5-6"><a href=""></a>             <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
-<span id="cb5-7"><a href=""></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"darkorange"</span>) <span class="sc">+</span></span>
-<span id="cb5-8"><a href=""></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb5-9"><a href=""></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Dimensiones del pico de los pingüinos"</span>,</span>
-<span id="cb5-10"><a href=""></a>       <span class="at">subtitle =</span> <span class="st">"Alto y largo del pico de pingüinos Papúa en la Estación Palmer LTER"</span>,</span>
-<span id="cb5-11"><a href=""></a>       <span class="at">x =</span> <span class="st">"Largo del pico (mm)"</span>,</span>
-<span id="cb5-12"><a href=""></a>       <span class="at">y =</span> <span class="st">"Alto del pico (mm)"</span>,</span>
-<span id="cb5-13"><a href=""></a>       <span class="at">color =</span> <span class="st">"Especie"</span>)                 </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Son utiles para explicar codigo o enfocar la atencion en una parte del codigo.</p>
+<div class="sourceCode" id="cb7" data-code-line-numbers="|1,2|3,4,5,6,7|8|9,10,11,12,13|"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href=""></a>pinguinos <span class="sc">%&gt;%</span> </span>
+<span id="cb7-2"><a href=""></a>  <span class="fu">filter</span>(especie <span class="sc">==</span> <span class="st">"Papúa"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb7-3"><a href=""></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> largo_pico_mm, <span class="at">y =</span> alto_pico_mm)) <span class="sc">+</span></span>
+<span id="cb7-4"><a href=""></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"darkorange"</span>,</span>
+<span id="cb7-5"><a href=""></a>             <span class="at">size =</span> <span class="dv">3</span>,</span>
+<span id="cb7-6"><a href=""></a>             <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb7-7"><a href=""></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"darkorange"</span>) <span class="sc">+</span></span>
+<span id="cb7-8"><a href=""></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb7-9"><a href=""></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Dimensiones del pico de los pingüinos"</span>,</span>
+<span id="cb7-10"><a href=""></a>       <span class="at">subtitle =</span> <span class="st">"Alto y largo del pico de pingüinos Papúa en la Estación Palmer LTER"</span>,</span>
+<span id="cb7-11"><a href=""></a>       <span class="at">x =</span> <span class="st">"Largo del pico (mm)"</span>,</span>
+<span id="cb7-12"><a href=""></a>       <span class="at">y =</span> <span class="st">"Alto del pico (mm)"</span>,</span>
+<span id="cb7-13"><a href=""></a>       <span class="at">color =</span> <span class="st">"Especie"</span>)                 </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
 <section id="codigo-ejecutable" class="slide level2">
 <h2>Codigo ejecutable</h2>
+<p>Podemos ejecutar codigo y mostrar su resultado. Este es el grafico que genera el codigo que vimos antes.</p>
 
 <img data-src="index_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"><div class="footer">
-<p>Learn more: <a href="https://quarto.org/docs/presentations/revealjs/#executable-code">Executable Code</a></p>
+<p>Para aprender mas: <a href="https://quarto.org/docs/presentations/revealjs/#executable-code">Executable Code</a></p>
 </div>
+</section></section>
+<section>
+<section id="vamos-a-personalizar-nuestra-presentacion-el-yaml" class="title-slide slide level1 center">
+<h1>Vamos a personalizar nuestra presentacion: el YAML!</h1>
+<p>y otras cositas.</p>
 </section>
 <section id="fuentes-para-consultar" class="slide level2">
 <h2>Fuentes para consultar</h2>
@@ -546,11 +588,12 @@ Yani Bellini Saibene
 <li><a href="https://quarto.org">Instalando Quarto</a></li>
 <li><a href="https://quarto.org/docs/presentations/">Documentacion oficial sobre presentaciones de Quarto</a></li>
 <li><a href="https://emilhvitfeldt.com/blog.html#category=slidecraft%20101">Emil Hvitfeldt’s Series Slidecraft 101</a></li>
+<li><a href="https://github.com/yabellini/CSVConfv7/blob/main/index.qmd">Presentacion para CSV,Conf</a></li>
 </ul>
 
 </section><div class="quarto-auto-generated-content">
 <div class="footer footer-default">
-
+<p>repo de esta charla <a href="https://github.com/yabellini/quarto-slides" class="uri">https://github.com/yabellini/quarto-slides</a></p>
 </div>
 </div></section>
     </div>
