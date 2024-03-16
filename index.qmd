@@ -33,3 +33,77 @@ Hoy vamos a:
 :::
 
 # Vamos a crear slides !
+
+## Agregando slides
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+Para agregar una slide nueva podemos usar:
+
+- el encabezado de segundo nivel.
+- tres guiones del medio para generar una nueva slide sin titulo.
+
+El encabezado de primer nivel genera una seccion nueva.
+
+:::
+
+::: {.column width="50%"}
+
+El codigo seria asi:
+
+```` markdown
+## Esta es la primera slide
+
+## Esta es la segunda slide
+
+# Esta es una seccion
+
+## Esta es una tercera slide
+
+---
+
+````
+:::
+
+::::
+
+
+## Agregando imagenes
+
+:::: {.columns}
+
+::: {.column width="35%"}
+
+Podemos agregar imagenes con texto alternativo.
+
+Es muy importante para la accesibilidad de nuestras presentaciones.
+
+:::
+
+::: {.column width="65%"}
+El codigo:
+
+```` markdown
+
+![](nombre-imagen){fig-alt = "alt text"}
+
+![](r-ladies-logo.png){fig-alt = "R-Ladies logo que dice R-Ladies en Argentina con un mate color purpura del lado izquierdo"}
+
+````
+
+[![](r-ladies-logo.png){fig-alt="R-Ladies en Argentina con un mate color purpura"}](https://quarto.org)
+
+:::
+
+::::
+
+
+
+
+## Fuentes para consultar
+
+- [Instalando Quarto](https://quarto.org)
+- [Documentacion oficial sobre presentaciones de Quarto](https://quarto.org/docs/presentations/)
+- [Emil Hvitfeldt's Series Slidecraft 101](https://emilhvitfeldt.com/blog.html#category=slidecraft%20101) 
