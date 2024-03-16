@@ -17,7 +17,7 @@ Hoy vamos a:
 - separacion en columnas de contenido
 - presentacion incremental de texto y codigo
 - resaltar contenido.
-- personalizar el pie de la slide
+- personalizar la presentacion
 
 
 ## Me cuentan {.winter}
