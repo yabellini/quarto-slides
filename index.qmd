@@ -146,7 +146,52 @@ pinguinos %>%
 Para aprender mas: [Syntax Highlighting](https://quarto.org/docs/output-formats/html-code.html#highlighting)
 :::
 
+## Resaltar lineas de codigo
 
+```{.r code-line-numbers="|1,2|3,4,5,6,7|8|9,10,11,12,13|"}
+pinguinos %>% 
+  filter(especie == "Papúa") %>% 
+  ggplot(aes(x = largo_pico_mm, y = alto_pico_mm)) +
+  geom_point(color = "darkorange",
+             size = 3,
+             alpha = 0.8) +
+  geom_smooth(method = "lm", se = FALSE, color = "darkorange") +
+  theme_minimal() +
+  labs(title = "Dimensiones del pico de los pingüinos",
+       subtitle = "Alto y largo del pico de pingüinos Papúa en la Estación Palmer LTER",
+       x = "Largo del pico (mm)",
+       y = "Alto del pico (mm)",
+       color = "Especie")                 
+
+```
+
+## Codigo ejecutable
+
+```{r}
+#| echo: false
+#| fig-width: 10
+#| fig-height: 4.5
+library(tidyverse)
+library(datos)
+
+pinguinos %>% 
+  filter(especie == "Papúa") %>% 
+  ggplot(aes(x = largo_pico_mm, y = alto_pico_mm)) +
+  geom_point(color = "darkorange",
+             size = 3,
+             alpha = 0.8) +
+  geom_smooth(method = "lm", se = FALSE, color = "darkorange") +
+  theme_minimal() +
+  labs(title = "Dimensiones del pico de los pingüinos",
+       subtitle = "Alto y largo del pico de pingüinos Papúa en la Estación Palmer LTER",
+       x = "Largo del pico (mm)",
+       y = "Alto del pico (mm)",
+       color = "Especie")   
+```
+
+::: footer
+Learn more: [Executable Code](https://quarto.org/docs/presentations/revealjs/#executable-code)
+:::
 
 ## Fuentes para consultar
 

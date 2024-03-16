@@ -517,6 +517,29 @@ Yani Bellini Saibene
 <p>Para aprender mas: <a href="https://quarto.org/docs/output-formats/html-code.html#highlighting">Syntax Highlighting</a></p>
 </div>
 </section>
+<section id="resaltar-lineas-de-codigo" class="slide level2">
+<h2>Resaltar lineas de codigo</h2>
+<div class="sourceCode" id="cb5" data-code-line-numbers="|1,2|3,4,5,6,7|8|9,10,11,12,13|"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href=""></a>pinguinos <span class="sc">%&gt;%</span> </span>
+<span id="cb5-2"><a href=""></a>  <span class="fu">filter</span>(especie <span class="sc">==</span> <span class="st">"Papúa"</span>) <span class="sc">%&gt;%</span> </span>
+<span id="cb5-3"><a href=""></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> largo_pico_mm, <span class="at">y =</span> alto_pico_mm)) <span class="sc">+</span></span>
+<span id="cb5-4"><a href=""></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"darkorange"</span>,</span>
+<span id="cb5-5"><a href=""></a>             <span class="at">size =</span> <span class="dv">3</span>,</span>
+<span id="cb5-6"><a href=""></a>             <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
+<span id="cb5-7"><a href=""></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"darkorange"</span>) <span class="sc">+</span></span>
+<span id="cb5-8"><a href=""></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb5-9"><a href=""></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Dimensiones del pico de los pingüinos"</span>,</span>
+<span id="cb5-10"><a href=""></a>       <span class="at">subtitle =</span> <span class="st">"Alto y largo del pico de pingüinos Papúa en la Estación Palmer LTER"</span>,</span>
+<span id="cb5-11"><a href=""></a>       <span class="at">x =</span> <span class="st">"Largo del pico (mm)"</span>,</span>
+<span id="cb5-12"><a href=""></a>       <span class="at">y =</span> <span class="st">"Alto del pico (mm)"</span>,</span>
+<span id="cb5-13"><a href=""></a>       <span class="at">color =</span> <span class="st">"Especie"</span>)                 </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="codigo-ejecutable" class="slide level2">
+<h2>Codigo ejecutable</h2>
+
+<img data-src="index_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"><div class="footer">
+<p>Learn more: <a href="https://quarto.org/docs/presentations/revealjs/#executable-code">Executable Code</a></p>
+</div>
+</section>
 <section id="fuentes-para-consultar" class="slide level2">
 <h2>Fuentes para consultar</h2>
 <ul>
@@ -740,6 +763,44 @@ Yani Bellini Saibene
         ]
       });
     </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
