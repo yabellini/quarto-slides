@@ -1,0 +1,35 @@
+---
+title: "Hermosas presentaciones con Quarto"
+subtitle: "Evento R-Ladies Santa Rosa - Marzo de 2024"
+author: "Yani Bellini Saibene"
+format: 
+  revealjs:
+    theme: [default, stilos.scss]
+---
+
+## Hola, les doy la bienvenida
+
+Hoy vamos a:
+
+- realizar **desde cero** una presentacion usando Quarto y Reveal.js
+- incluir imagenes, codigo y su resultado.
+- separacion en columnas de contenido
+- presentacion incremental de texto y codigo
+- resaltar contenido.
+- esconder slides.
+- publicarla en la web con netlify (si hacemos tiempo).
+
+
+## Me cuentan {.winter}
+
+::: {.incremental}
+
+- Han usado Quarto antes ?
+
+- Han usado rmarkdown antes?
+
+- tienen alguna idea de presentacion que quieran hacer ?
+
+:::
+
+# Vamos a crear slides !
