@@ -100,6 +100,52 @@ El codigo:
 ::::
 
 
+# Ahora juguemos con codigo en nuestras slides
+
+## Agregando codigo {auto-animate="true"}
+
+- Se utilizan chunks de codigo. 
+- Tiene estilos muy bonitos para formatear el codigo
+
+``` r
+pinguinos %>% 
+  filter(especie == "Papúa") %>% 
+  ggplot(aes(x = largo_pico_mm, y = alto_pico_mm)) +
+  geom_point(color = "darkorange",
+             size = 3,
+             alpha = 0.8) +
+  geom_smooth(method = "lm", se = FALSE, color = "darkorange") +
+  theme_minimal() 
+```
+
+::: footer
+Para aprender mas: [Syntax Highlighting](https://quarto.org/docs/output-formats/html-code.html#highlighting)
+:::
+
+## Animacion del codigo {auto-animate="true"}
+
+- Se utilizan chunks de codigo. 
+- Tiene estilos muy bonitos para formatear el codigo
+
+``` r
+pinguinos %>% 
+  filter(especie == "Papúa") %>% 
+  ggplot(aes(x = largo_pico_mm, y = alto_pico_mm)) +
+  geom_point(color = "darkorange",
+             size = 3,
+             alpha = 0.8) +
+  geom_smooth(method = "lm", se = FALSE, color = "darkorange") +
+  theme_minimal() +
+  labs(title = "Dimensiones del pico de los pingüinos",
+       subtitle = "Alto y largo del pico de pingüinos Papúa en la Estación Palmer LTER",
+       x = "Largo del pico (mm)",
+       y = "Alto del pico (mm)",
+       color = "Especie") 
+```
+::: footer
+Para aprender mas: [Syntax Highlighting](https://quarto.org/docs/output-formats/html-code.html#highlighting)
+:::
+
 
 
 ## Fuentes para consultar
