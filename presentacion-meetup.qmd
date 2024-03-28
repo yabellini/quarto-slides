@@ -1,0 +1,67 @@
+---
+title: "Presentacion re hermosa de R-Ladies"
+author: "Yani"
+format: revealjs
+---
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished presentation. To learn more about [Quarto presentations](https://quarto.org/docs/presentations/).
+
+## Bullets
+
+When you click the **Render** button a *document* will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+## Lista incremental
+
+::: incremental
+-   Primer item de la lista
+-   Segundo 
+-   y tercero 
+:::
+
+## Agregando una imagen
+
+Que hermoso logo que tenemos. 
+
+![](r-ladies-logo.png){fig-alt = "R-Ladies logo que dice R-Ladies en Argentina con un mate color purpura del lado izquierdo"}
+
+## Separando en columnas
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Columna izquierda
+:::
+
+::: {.column width="30%"}
+Columna del medio
+:::
+
+::: {.column width="30%"}
+Columna derecha
+:::
+
+::::
+
+
+
+
+
+
+
+
+
+

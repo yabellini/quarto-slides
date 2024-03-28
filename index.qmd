@@ -6,6 +6,8 @@ format:
   revealjs:
     theme: [default, stilos.scss]
     footer: repo de esta charla <https://github.com/yabellini/quarto-slides>
+    logo: r-ladies-logo.png
+    slide-number: c/t
 ---
 
 ## Hola, les doy la bienvenida
@@ -32,9 +34,10 @@ Hoy vamos a:
 
 :::
 
+
 # Vamos a crear slides !
 
-## Agregando slides
+## Agregando slides {background="#43464B" background-image="r-ladies-logo.png"}
 
 :::: {.columns}
 
@@ -112,7 +115,7 @@ El codigo:
 
 ````
 
-[![](r-ladies-logo.png){fig-alt="R-Ladies en Argentina con un mate color purpura"}](https://quarto.org)
+[![](r-ladies-logo.png){fig-alt="R-Ladies en Argentina con un mate color purpura"}](https://quarto.org)]
 
 :::
 
@@ -250,6 +253,51 @@ pinguinos %>%
 
 ::: footer
 Para aprender mas: [Executable Code](https://quarto.org/docs/presentations/revealjs/#executable-code)
+:::
+
+## Latex
+
+## Ecuaciones en LaTeX 
+
+[MathJax](https://www.mathjax.org/) renderiza las ecuaciones a  HTML
+
+::: columns
+::: {.column width="40%"}
+``` tex
+\begin{gather*}
+a_1=b_1+c_1\\
+a_2=b_2+c_2-d_2+e_2
+\end{gather*}
+
+\begin{align}
+a_{11}& =b_{11}&
+  a_{12}& =b_{12}\\
+a_{21}& =b_{21}&
+  a_{22}& =b_{22}+c_{22}
+\end{align}
+```
+:::
+
+::: {.column width="60%"}
+```{=tex}
+\begin{gather*}
+a_1=b_1+c_1\\
+a_2=b_2+c_2-d_2+e_2
+\end{gather*}
+```
+```{=tex}
+\begin{align}
+a_{11}& =b_{11}&
+  a_{12}& =b_{12}\\
+a_{21}& =b_{21}&
+  a_{22}& =b_{22}+c_{22}
+\end{align}
+```
+:::
+:::
+
+::: footer
+Para aprender mas: [LaTeX Equations](https://quarto.org/docs/authoring/markdown-basics.html#equations)
 :::
 
 # Vamos a personalizar nuestra presentacion: el YAML!

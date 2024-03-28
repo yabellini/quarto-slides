@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="index_files/libs/clipboard/clipboard.min.js"></script>
-<script src="index_files/libs/quarto-html/tabby.min.js"></script>
-<script src="index_files/libs/quarto-html/popper.min.js"></script>
-<script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="presentacion-meetup_files/libs/clipboard/clipboard.min.js"></script>
+<script src="presentacion-meetup_files/libs/quarto-html/tabby.min.js"></script>
+<script src="presentacion-meetup_files/libs/quarto-html/popper.min.js"></script>
+<script src="presentacion-meetup_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="presentacion-meetup_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="presentacion-meetup_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="presentacion-meetup_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
+<link href="presentacion-meetup_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.528">
 
-  <meta name="author" content="Yani Bellini Saibene">
-  <title>Hermosas presentaciones con Quarto</title>
+  <meta name="author" content="Yani">
+  <title>Presentacion re hermosa de R-Ladies</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="presentacion-meetup_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="presentacion-meetup_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -29,77 +29,12 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto.css">
-  <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="index_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="presentacion-meetup_files/libs/revealjs/dist/theme/quarto.css">
+  <link href="presentacion-meetup_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="presentacion-meetup_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="presentacion-meetup_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="presentacion-meetup_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
 
   .callout {
@@ -391,265 +326,87 @@
     <div class="slides">
 
 <section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">Hermosas presentaciones con Quarto</h1>
-  <p class="subtitle">Evento R-Ladies Santa Rosa - Marzo de 2024</p>
+  <h1 class="title">Presentacion re hermosa de R-Ladies</h1>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Yani Bellini Saibene 
+Yani 
 </div>
 </div>
 </div>
 
 </section>
-<section id="hola-les-doy-la-bienvenida" class="slide level2">
-<h2>Hola, les doy la bienvenida</h2>
-<p>Hoy vamos a:</p>
+<section id="quarto" class="slide level2">
+<h2>Quarto</h2>
+<p>Quarto enables you to weave together content and executable code into a finished presentation. To learn more about <a href="https://quarto.org/docs/presentations/">Quarto presentations</a>.</p>
+</section>
+<section id="bullets" class="slide level2">
+<h2>Bullets</h2>
+<p>When you click the <strong>Render</strong> button a <em>document</em> will be generated that includes:</p>
 <ul>
-<li>realizar <strong>desde cero</strong> una presentacion usando Quarto y Reveal.js</li>
-<li>incluir imagenes, codigo y su resultado.</li>
-<li>separacion en columnas de contenido</li>
-<li>presentacion incremental de texto y codigo</li>
-<li>resaltar contenido.</li>
-<li>personalizar la presentacion</li>
+<li>Content authored with markdown</li>
+<li>Output from executable code</li>
 </ul>
 </section>
-<section id="me-cuentan" class="slide level2 winter">
-<h2>Me cuentan</h2>
+<section id="code" class="slide level2">
+<h2>Code</h2>
+<p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+</div>
+</section>
+<section id="lista-incremental" class="slide level2">
+<h2>Lista incremental</h2>
 <div>
 <ul>
-<li class="fragment"><p>Han usado Quarto antes ?</p></li>
-<li class="fragment"><p>Han usado rmarkdown antes?</p></li>
-<li class="fragment"><p>tienen alguna idea de presentacion que quieran hacer ?</p></li>
+<li class="fragment">Primer item de la lista</li>
+<li class="fragment">Segundo</li>
+<li class="fragment">y tercero</li>
 </ul>
 </div>
 </section>
-<section>
-<section id="vamos-a-crear-slides" class="title-slide slide level1 center">
-<h1>Vamos a crear slides !</h1>
-
+<section id="agregando-una-imagen" class="slide level2">
+<h2>Agregando una imagen</h2>
+<p>Que hermoso logo que tenemos.</p>
+<p><img data-src="r-ladies-logo.png">{fig-alt = “R-Ladies logo que dice R-Ladies en Argentina con un mate color purpura del lado izquierdo”}</p>
 </section>
-<section id="agregando-slides" class="slide level2" data-background="#43464B" data-background-image="r-ladies-logo.png">
-<h2>Agregando slides</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Para agregar una slide nueva podemos usar:</p>
-<ul>
-<li>el encabezado de segundo nivel.</li>
-<li>el encabezado de primer nivel genera una seccion nueva.</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<p>El codigo seria asi:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a href=""></a><span class="fu">## Esta es la primera slide</span></span>
-<span id="cb1-2"><a href=""></a></span>
-<span id="cb1-3"><a href=""></a><span class="fu">## Esta es la segunda slide</span></span>
-<span id="cb1-4"><a href=""></a></span>
-<span id="cb1-5"><a href=""></a><span class="fu"># Esta es una seccion</span></span>
-<span id="cb1-6"><a href=""></a></span>
-<span id="cb1-7"><a href=""></a><span class="fu">## Esta es una tercera slide</span></span>
-<span id="cb1-8"><a href=""></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</section>
-<section id="mostrar-elementos-de-forma-incremental" class="slide level2">
-<h2>Mostrar elementos de forma incremental</h2>
+<section id="separando-en-columnas" class="slide level2">
+<h2>Separando en columnas</h2>
 <div class="columns">
 <div class="column" style="width:40%;">
-<p>Para mostar los elementos de una lista de forma incremental (como la slide de las preguntas)</p>
-</div><div class="column" style="width:60%;">
-<div class="sourceCode" id="cb2"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href=""></a></span>
-<span id="cb2-2"><a href=""></a>::: incremental</span>
-<span id="cb2-3"><a href=""></a><span class="ss">-   </span>Primer item de la lista</span>
-<span id="cb2-4"><a href=""></a><span class="ss">-   </span>Segundo </span>
-<span id="cb2-5"><a href=""></a><span class="ss">-   </span>y tercero </span>
-<span id="cb2-6"><a href=""></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Columna izquierda</p>
+</div><div class="column" style="width:30%;">
+<p>Columna del medio</p>
+</div><div class="column" style="width:30%;">
+<p>Columna derecha</p>
 </div>
 </div>
-</section>
-<section id="agregando-imagenes" class="slide level2">
-<h2>Agregando imagenes</h2>
-<div class="columns">
-<div class="column" style="width:35%;">
-<p>Podemos agregar imagenes con texto alternativo.</p>
-<p>Es muy importante para la accesibilidad de nuestras presentaciones.</p>
-</div><div class="column" style="width:65%;">
-<p>El codigo:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb3-1"><a href=""></a></span>
-<span id="cb3-2"><a href=""></a><span class="al">![](nombre-imagen)</span>{fig-alt = "alt text"}</span>
-<span id="cb3-3"><a href=""></a></span>
-<span id="cb3-4"><a href=""></a><span class="al">![](r-ladies-logo.png)</span>{fig-alt = "R-Ladies logo que dice R-Ladies en Argentina con un mate color purpura del lado izquierdo"}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p><a href="https://quarto.org"><img data-src="r-ladies-logo.png" alt="R-Ladies en Argentina con un mate color purpura"></a>]</p>
-</div>
-</div>
-</section>
-<section id="agregando-columnas" class="slide level2">
-<h2>Agregando columnas</h2>
-<p>Esta slide esta dividida en dos columnas.</p>
-<div class="columns">
-<div class="column" style="width:40%;">
-<p>Se puede dividir al slides en muchas columnas mas.</p>
-<p>Se puede indicar que porcion de las slides ocupa cada columna.</p>
-</div><div class="column" style="width:60%;">
-<div class="sourceCode" id="cb4"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href=""></a></span>
-<span id="cb4-2"><a href=""></a>:::: {.columns}</span>
-<span id="cb4-3"><a href=""></a></span>
-<span id="cb4-4"><a href=""></a>::: {.column width="40%"}</span>
-<span id="cb4-5"><a href=""></a>Columna izquierda</span>
-<span id="cb4-6"><a href=""></a>:::</span>
-<span id="cb4-7"><a href=""></a></span>
-<span id="cb4-8"><a href=""></a>::: {.column width="60%"}</span>
-<span id="cb4-9"><a href=""></a>Columna derecha</span>
-<span id="cb4-10"><a href=""></a>:::</span>
-<span id="cb4-11"><a href=""></a></span>
-<span id="cb4-12"><a href=""></a>::::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-</div>
-</section></section>
-<section>
-<section id="ahora-juguemos-con-codigo-en-nuestras-slides" class="title-slide slide level1 center">
-<h1>Ahora juguemos con codigo en nuestras slides</h1>
 
 </section>
-<section id="agregando-codigo" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Agregando codigo</h2>
-<ul>
-<li>Se utilizan chunks de codigo.</li>
-<li>Tiene estilos muy bonitos para formatear el codigo</li>
-</ul>
-<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb5-1" class="hljs-ln-code"><a href=""></a>pinguinos <span class="sc">%&gt;%</span> </span>
-<span id="cb5-2" class="hljs-ln-code"><a href=""></a>  <span class="fu">filter</span>(especie <span class="sc">==</span> <span class="st">"Papúa"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb5-3" class="hljs-ln-code"><a href=""></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> largo_pico_mm, <span class="at">y =</span> alto_pico_mm)) <span class="sc">+</span></span>
-<span id="cb5-4" class="hljs-ln-code"><a href=""></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"darkorange"</span>,</span>
-<span id="cb5-5" class="hljs-ln-code"><a href=""></a>             <span class="at">size =</span> <span class="dv">3</span>,</span>
-<span id="cb5-6" class="hljs-ln-code"><a href=""></a>             <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
-<span id="cb5-7" class="hljs-ln-code"><a href=""></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"darkorange"</span>) <span class="sc">+</span></span>
-<span id="cb5-8" class="hljs-ln-code"><a href=""></a>  <span class="fu">theme_minimal</span>() </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="footer">
-<p>Para aprender mas: <a href="https://quarto.org/docs/output-formats/html-code.html#highlighting">Syntax Highlighting</a></p>
-</div>
-</section>
-<section id="animacion-del-codigo" class="slide level2" data-auto-animate="true">
-<h2 data-id="quarto-animate-title">Animacion del codigo</h2>
-<ul>
-<li>Se utilizan chunks de codigo.</li>
-<li>Tiene estilos muy bonitos para formatear el codigo</li>
-</ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource r number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode r hljs"><span id="cb6-1" class="hljs-ln-code"><a href=""></a>pinguinos <span class="sc">%&gt;%</span> </span>
-<span id="cb6-2" class="hljs-ln-code"><a href=""></a>  <span class="fu">filter</span>(especie <span class="sc">==</span> <span class="st">"Papúa"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb6-3" class="hljs-ln-code"><a href=""></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> largo_pico_mm, <span class="at">y =</span> alto_pico_mm)) <span class="sc">+</span></span>
-<span id="cb6-4" class="hljs-ln-code"><a href=""></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"darkorange"</span>,</span>
-<span id="cb6-5" class="hljs-ln-code"><a href=""></a>             <span class="at">size =</span> <span class="dv">3</span>,</span>
-<span id="cb6-6" class="hljs-ln-code"><a href=""></a>             <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
-<span id="cb6-7" class="hljs-ln-code"><a href=""></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"darkorange"</span>) <span class="sc">+</span></span>
-<span id="cb6-8" class="hljs-ln-code"><a href=""></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb6-9" class="hljs-ln-code"><a href=""></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Dimensiones del pico de los pingüinos"</span>,</span>
-<span id="cb6-10" class="hljs-ln-code"><a href=""></a>       <span class="at">subtitle =</span> <span class="st">"Alto y largo del pico de pingüinos Papúa en la Estación Palmer LTER"</span>,</span>
-<span id="cb6-11" class="hljs-ln-code"><a href=""></a>       <span class="at">x =</span> <span class="st">"Largo del pico (mm)"</span>,</span>
-<span id="cb6-12" class="hljs-ln-code"><a href=""></a>       <span class="at">y =</span> <span class="st">"Alto del pico (mm)"</span>,</span>
-<span id="cb6-13" class="hljs-ln-code"><a href=""></a>       <span class="at">color =</span> <span class="st">"Especie"</span>) </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="footer">
-<p>Para aprender mas: <a href="https://quarto.org/docs/output-formats/html-code.html#highlighting">Syntax Highlighting</a></p>
-</div>
-</section>
-<section id="resaltar-lineas-de-codigo" class="slide level2">
-<h2>Resaltar lineas de codigo</h2>
-<p>Son utiles para explicar codigo o enfocar la atencion en una parte del codigo.</p>
-<div class="sourceCode" id="cb7" data-code-line-numbers="|1,2|3,4,5,6,7|8|9,10,11,12,13|"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href=""></a>pinguinos <span class="sc">%&gt;%</span> </span>
-<span id="cb7-2"><a href=""></a>  <span class="fu">filter</span>(especie <span class="sc">==</span> <span class="st">"Papúa"</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb7-3"><a href=""></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> largo_pico_mm, <span class="at">y =</span> alto_pico_mm)) <span class="sc">+</span></span>
-<span id="cb7-4"><a href=""></a>  <span class="fu">geom_point</span>(<span class="at">color =</span> <span class="st">"darkorange"</span>,</span>
-<span id="cb7-5"><a href=""></a>             <span class="at">size =</span> <span class="dv">3</span>,</span>
-<span id="cb7-6"><a href=""></a>             <span class="at">alpha =</span> <span class="fl">0.8</span>) <span class="sc">+</span></span>
-<span id="cb7-7"><a href=""></a>  <span class="fu">geom_smooth</span>(<span class="at">method =</span> <span class="st">"lm"</span>, <span class="at">se =</span> <span class="cn">FALSE</span>, <span class="at">color =</span> <span class="st">"darkorange"</span>) <span class="sc">+</span></span>
-<span id="cb7-8"><a href=""></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
-<span id="cb7-9"><a href=""></a>  <span class="fu">labs</span>(<span class="at">title =</span> <span class="st">"Dimensiones del pico de los pingüinos"</span>,</span>
-<span id="cb7-10"><a href=""></a>       <span class="at">subtitle =</span> <span class="st">"Alto y largo del pico de pingüinos Papúa en la Estación Palmer LTER"</span>,</span>
-<span id="cb7-11"><a href=""></a>       <span class="at">x =</span> <span class="st">"Largo del pico (mm)"</span>,</span>
-<span id="cb7-12"><a href=""></a>       <span class="at">y =</span> <span class="st">"Alto del pico (mm)"</span>,</span>
-<span id="cb7-13"><a href=""></a>       <span class="at">color =</span> <span class="st">"Especie"</span>)                 </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="codigo-ejecutable" class="slide level2">
-<h2>Codigo ejecutable</h2>
-<p>Podemos ejecutar codigo y mostrar su resultado. Este es el grafico que genera el codigo que vimos antes.</p>
-
-<img data-src="index_files/figure-revealjs/unnamed-chunk-1-1.png" width="960" class="r-stretch"><div class="footer">
-<p>Para aprender mas: <a href="https://quarto.org/docs/presentations/revealjs/#executable-code">Executable Code</a></p>
-</div>
-</section>
-<section id="latex" class="slide level2">
-<h2>Latex</h2>
-</section>
-<section id="ecuaciones-en-latex" class="slide level2">
-<h2>Ecuaciones en LaTeX</h2>
-<p><a href="https://www.mathjax.org/">MathJax</a> renderiza las ecuaciones a HTML</p>
-<div class="columns">
-<div class="column" style="width:40%;">
-<div class="sourceCode" id="cb8"><pre class="sourceCode numberSource tex number-lines code-with-copy"><code class="sourceCode latex"><span id="cb8-1"><a href=""></a><span class="kw">\begin</span>{<span class="ex">gather*</span>}</span>
-<span id="cb8-2"><a href=""></a><span class="ss">a_1=b_1+c_1</span><span class="sc">\\</span></span>
-<span id="cb8-3"><a href=""></a><span class="ss">a_2=b_2+c_2-d_2+e_2</span></span>
-<span id="cb8-4"><a href=""></a><span class="kw">\end</span>{<span class="ex">gather*</span>}</span>
-<span id="cb8-5"><a href=""></a></span>
-<span id="cb8-6"><a href=""></a><span class="kw">\begin</span>{<span class="ex">align</span>}</span>
-<span id="cb8-7"><a href=""></a><span class="ss">a_{11}&amp; =b_{11}&amp;</span></span>
-<span id="cb8-8"><a href=""></a><span class="ss">  a_{12}&amp; =b_{12}</span><span class="sc">\\</span></span>
-<span id="cb8-9"><a href=""></a><span class="ss">a_{21}&amp; =b_{21}&amp;</span></span>
-<span id="cb8-10"><a href=""></a><span class="ss">  a_{22}&amp; =b_{22}+c_{22}</span></span>
-<span id="cb8-11"><a href=""></a><span class="kw">\end</span>{<span class="ex">align</span>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column" style="width:60%;">
-<span class="math display">\[\begin{gather*}
-a_1=b_1+c_1\\
-a_2=b_2+c_2-d_2+e_2
-\end{gather*}\]</span>
-<span class="math display">\[\begin{align}
-a_{11}&amp; =b_{11}&amp;
-  a_{12}&amp; =b_{12}\\
-a_{21}&amp; =b_{21}&amp;
-  a_{22}&amp; =b_{22}+c_{22}
-\end{align}\]</span>
-</div>
-</div>
-<div class="footer">
-<p>Para aprender mas: <a href="https://quarto.org/docs/authoring/markdown-basics.html#equations">LaTeX Equations</a></p>
-</div>
-</section></section>
-<section>
-<section id="vamos-a-personalizar-nuestra-presentacion-el-yaml" class="title-slide slide level1 center">
-<h1>Vamos a personalizar nuestra presentacion: el YAML!</h1>
-<p>y otras cositas.</p>
-</section>
-<section id="fuentes-para-consultar" class="slide level2">
-<h2>Fuentes para consultar</h2>
-<ul>
-<li><a href="https://quarto.org">Instalando Quarto</a></li>
-<li><a href="https://quarto.org/docs/presentations/">Documentacion oficial sobre presentaciones de Quarto</a></li>
-<li><a href="https://emilhvitfeldt.com/blog.html#category=slidecraft%20101">Emil Hvitfeldt’s Series Slidecraft 101</a></li>
-<li><a href="https://github.com/yabellini/CSVConfv7/blob/main/index.qmd">Presentacion para CSV,Conf</a></li>
-</ul>
-
-</section><div class="quarto-auto-generated-content">
-<p><img src="r-ladies-logo.png" class="slide-logo"></p>
+    <div class="quarto-auto-generated-content">
 <div class="footer footer-default">
-<p>repo de esta charla <a href="https://github.com/yabellini/quarto-slides" class="uri">https://github.com/yabellini/quarto-slides</a></p>
+
 </div>
-</div></section>
-    </div>
+</div></div>
   </div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="index_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="presentacion-meetup_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="index_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="index_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="index_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="presentacion-meetup_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="presentacion-meetup_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="presentacion-meetup_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="presentacion-meetup_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="presentacion-meetup_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="index_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="index_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="index_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="index_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="presentacion-meetup_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="presentacion-meetup_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="presentacion-meetup_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="presentacion-meetup_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -684,7 +441,7 @@ a_{21}&amp; =b_{21}&amp;
         progress: true,
 
         // Display the page number of the current slide
-        slideNumber: 'c/t',
+        slideNumber: false,
 
         // 'all', 'print', or 'speaker'
         showSlideNumber: 'all',
